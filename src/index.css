@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/gilroy/Gilroy-Regular.ttf') format('truetype'),
+       url('./assets/fonts/gilroy/Gilroy-Light.ttf') format('truetype');
+}
+body{
+  font-family: 'Gilroy';
+  font-weight: 200;
+  color: beige;
+  padding: 0;
+  margin: 0;
+  background: #1d2b3a;
+}
+
+.inputBox{
+  position: relative;
+  padding: 10px;
+
+  font-size: 2em;
+  text-transform: uppercase;
+
+}
+.input {
+
+}
+.inputBox input{
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: beige;
+  outline: 0;
+  padding: 15px;
+  font-size: 1.0em;
+  
+  background: #1d2b3a49;
+  border: solid white 2px;
+
+}
+.inputBox span{
+  position: absolute;
+  padding: 5px;
+  color:#4261823d;
+  top: 20px;
+  left: 150px;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.inputBox :valid ~ span,
+.inputBox :focus ~ span
+{
+  transform:translateX(10px) translateY(-15px);
+  font-size: 0.5em;
+  color: aqua;
+  font-weight: 600;
+  background-color: #1d2b3a;
+  letter-spacing: 4px;
+  border: 0;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+}
+
+.button {
+  background-color: #0452aa; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover{
+  filter: brightness(1.5);
+}
